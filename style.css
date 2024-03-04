@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 10px;
+    /* margin: 10px; */
     background: linear-gradient(135deg, #3a2140, rgb(23 0 255));
     /* border: solid 2px rgba(255, 255, 255, 0.526); */
 }
@@ -115,10 +115,12 @@ nav ul li a {
 
 #heading h1 {
     font-size: 30px;
+    margin: 50px 0;
 }
 
 #heading hr {
-    width: 30vh
+    width: 80vh;
+   
 }
 
 
@@ -184,39 +186,46 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-   body{
-    width: 100%;
-    background-color: red;
-   }
+    .main{
+        
+    }
+    .main h1 {
+        font-size: 2rem;
+        margin-top: 70px;
+    }
 
-   .main{
-    /* width: 100%; */
-    height: 100%;
-   }
-   .main h1 {
-    margin-top: 100px;
-    font-size: 2rem;
-}
+    .main h2 {
+        font-size: 2rem;
+    }
 
-.main h2 {
-   
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-weight: 800;
-    font-size: 20px;
-    color: rgb(0, 251, 255);
-}
+    .main p {
+        margin: 20px 0;
+        font-size: 1.2rem;
+        padding: 20px;
+    }
 
-.main p {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 3vh;
-}
-.swipe{
-    margin-top: 50px;
-}
-#heading hr {
-    width: 18vh
-}
+    #lang {
+        font-size: 2rem;
+    }
+
+    .swipe {
+        margin-top: 2px;
+        /* margin-bottom: 2px; */
+    }
+
+    #vid{
+        height: 85vh;
+        width: 100%;
+    }
+    #heading hr {
+        width: 18vh
+    }
+
+    #boxes {
+        margin: 20px;
+    }
+
+    #content {
+        margin: 20px;
+    }
 }
