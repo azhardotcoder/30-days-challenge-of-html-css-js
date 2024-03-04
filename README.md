@@ -64,4 +64,4 @@ Throughout the challenge, you may encounter difficulties or have questions about
 
 ## Share Your Progress
 
-Happy coding, and best of luck with the challenge! Let's build some awesome projects together. 🚀👨‍💻👩‍💻
+Happy coding, and best of luck with the challenge! Let's build some awesome projects together. 
