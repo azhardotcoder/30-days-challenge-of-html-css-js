@@ -60,7 +60,7 @@ input{
 button{
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 16px 24px;
     background: #ff5945;
     color: #fff;
     cursor: pointer;
