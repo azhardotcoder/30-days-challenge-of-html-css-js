@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+
+.display {
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 12px;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+
+}
+
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;
+}
+
+.display img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    width: 100%;
+}
+
+.container button img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.container button {
+    border: 0;
+    outline: 0;
+    background: #019f55;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+footer{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+footer p{
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+font-weight: 800;
+    background-color: #000000;
+    padding: 10px;
+   /* margin-right: 15px; */
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    background-color: #019f55;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 10px  ;
+}
+@media screen and (max-width: 600px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .container {
+        margin: 20% 0;
+        height: 60vh;
+    }
+    .display {
+        width: 100%;
+    }
+    .display input {
+        font-size: 18px;
+    }
+    .container button {
+        
+        font-size: 18px;
+    }
+    .container button img {
+        width: 24px;
+    }
+    .container h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    #buttn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+}
