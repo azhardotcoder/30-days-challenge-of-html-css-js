@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #3a4452;
+}
+
+.container{
+    
+    width: 100%;
+    height: 100vh;
+    background: e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.calculator{
+    border: 2px solid #33ffd8;
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+    /* text-align: center; */
+    
+}
+.text-style{
+    color: #33ffd8 ;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 100;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+
+}
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    
+}
+.btn{
+    margin-top: 10px;
+    /* width: 100%; */
+}
+form .display input{
+   text-align: right;
+   flex: 1;
+   font-size: 45px;
+   box-shadow: none;
+}
+form input.equal{
+    width: 145px !important;
+}
+form input.operator{
+    color: #33ffd8 ;
+}
+.display img{
+    filter: brightness(0) invert(1);
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+   
+}
+.text-style-1{
+    color: #33ffd8;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+
+@media screen and (max-width: 600px) {
+   body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #3a4452;
+   }
+    .container{
+         width: 100%;
+         height: auto;
+    }
+    .calculator{
+        border: none;
+        width: 100%;
+        height:92vh;
+        padding-top: 30px;
+    }
+    .main-btn{
+        /* border: 1px solid #33ffda7a; */
+        margin-top: 20px;
+    }
+    .text-style-1{
+        margin-top: 30px;
+    }
+}
