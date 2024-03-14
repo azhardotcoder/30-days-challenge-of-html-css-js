@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Removal</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="shortcut icon" href="./icons8-cloud-refresh-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Background Removal Tool</h1>
+    <div class="container">
+        <div class="first">
+
+           
+            <input type="file" id="imageUpload" accept="image/*">
+           
+            <label class="btn" for="imageUpload">  
+                <i class="material-icons">cloud_upload
+                </i>    Upload Image</label>
+        </div>
+        <div class="output" id="output">
+            <h2>Original Image</h2>
+            <img id="originalImage" alt="">
+            <h2>Background Removed</h2>
+            <img id="outputImage" alt="">
+            <a class="btn-2" id="downloadLink" style="display: none;" download="background_removed_image.png">Download Image</a>
+        </div>
+    </div>
+    <h1 id="intro">Made by Azhar</h1>
+    <script src="script.js"></script>
+</body>
+</html>

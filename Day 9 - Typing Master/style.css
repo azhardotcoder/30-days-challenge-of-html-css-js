@@ -1,0 +1,220 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2e208c;
+    flex-direction: column;
+}
+
+::selection {
+    color: #fff;
+    background: #2e208c;
+}
+
+.head h1 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.wrapper {
+    width: 770px;
+    padding: 35px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper .input-field {
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+}
+
+.wrapper .content-box {
+    padding: 13px 20px 0;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+}
+
+.content-box .typing-text {
+    overflow: hidden;
+    max-height: 256px;
+}
+
+.typing-text::-webkit-scrollbar {
+    width: 0;
+}
+
+.typing-text p {
+    font-size: 21px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-break: break-all;
+}
+
+.typing-text p span {
+    position: relative;
+}
+
+.typing-text p span.correct {
+    color: #56964f;
+}
+
+.typing-text p span.incorrect {
+    color: #cb3439;
+    outline: 1px solid #fff;
+    background: #ffc0cb;
+    border-radius: 4px;
+}
+
+.typing-text p span.active {
+    color: #17A2B8;
+}
+
+.typing-text p span.active::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 5px;
+    background: #2e208c;
+    animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+}
+
+.content-box .content {
+    margin-top: 17px;
+    display: flex;
+    padding: 12px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #bfbfbf;
+}
+
+.content button {
+    outline: none;
+    border: none;
+    width: 105px;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #2e208c;
+    transition: transform 0.3s ease;
+}
+
+.content button:active {
+    transform: scale(0.97);
+}
+
+.content .result-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: calc(100% - 140px);
+    justify-content: space-between;
+}
+
+.result-details li {
+    display: flex;
+    height: 20px;
+    list-style: none;
+    position: relative;
+    align-items: center;
+}
+
+.result-details li:not(:first-child) {
+    padding-left: 22px;
+    border-left: 1px solid #bfbfbf;
+}
+
+.result-details li p {
+    font-size: 19px;
+}
+
+.result-details li span {
+    display: block;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+li span b {
+    font-weight: 500;
+}
+
+li:not(:first-child) span {
+    font-weight: 500;
+}
+
+footer {
+    /* background-color: #333; */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-weight: bold;
+    letter-spacing: 3px
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+@media (max-width: 640px) {
+
+    .wrapper {
+        display: none;
+    }
+
+    .head h1 {
+        font-size: 20px;
+        margin-bottom: 50px;
+        letter-spacing: 5px;
+    }
+    .head::after {
+        content: "This website is not responsive. Please use the desktop version for a better experience.";
+        background-color: #ffcccc;
+        color: #ff0000;
+        text-align: center;
+        
+    }
+
+}
