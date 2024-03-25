@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Nanum+Myeongjo:wght@400;700;800&family=Ojuju:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alkatra", system-ui;
+    
+}
+
+body{
+    background: #5c6fcf;
+
+}
+.quote-box{
+    
+    background: #c6d6f2;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+}
+.quote-box h2{
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.quote-box h2::after{
+   content: '';
+   width: 75px;
+   height: 3px;
+   background: rgb(23, 124, 229);
+    border-radius: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.quote-box blockquote{
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 26px;
+    min-height: 110px;
+    font-weight: 600;
+    
+}
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+    
+}
+.quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+}
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box button{
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    font-family: "Nanum Myeongjo", serif;
+}
+.quote-box button img{
+    width: 20px;
+    margin-right: 10px;
+
+}
+.quote-box button:nth-child(2){
+    background: black;
+    color:white;
+    font-weight: 600;
+}
+
+@media (max-width: 768px){
+    .quote-box{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        align-items: center;
+       
+    }
+    .quote-box h2{
+        font-size: 24px;
+    }
+    .quote-box blockquote{
+        font-size: 1rem;
+        min-height: 90px;
+    }
+    .quote-box span{
+        font-size: 18px;
+    }
+    .quote-box button{
+        width: 120px;
+        height: 40px;
+        font-size: 3vw;
+    }
+    .quote-box button img{
+        display: none;
+    }
+    .quote-box div{
+        margin-top: 0px;
+    }
+
+    
+}

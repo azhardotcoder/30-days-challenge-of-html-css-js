@@ -1,0 +1,131 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right top, #000000, #150910, #1f121d, #26182c, #27203e, #212848, #163051, #003859, #003e57, #004453, #09484e, #1f4c49);
+  width: 100vw;
+  height: 80vh;
+}
+/* Hide scroll bar  */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.message {
+    display: none;
+    color: #fff;
+}
+
+.gallery {
+  width: 56.25em;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.gallery div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 0.625em;
+  flex: none;
+}
+
+.gallery div img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery {
+  scrollbar-width: none;
+}
+
+.gallery__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+  
+}
+
+#backBtn,
+#nextBtn {
+  width: 3.125em;
+  cursor: pointer;
+  margin: 2.5em;
+}
+
+.gallery div img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#heading{
+  color: white;
+  text-align: center;
+  /* margin-top: 2em; */
+  font-size: 2em;
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background: #c70226;
+      }
+  body::after{
+    content: "Please view this page on a larger screen";
+    color: white;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+  }
+ 
+  .gallery {
+    width: auto;
+    display: none;
+   /* background-color: red; */
+  }
+
+  .gallery div {
+
+    width: 100%;
+  }
+  #backBtn,
+#nextBtn {
+  width: 3.125em;
+  cursor: pointer;
+  padding: 0;
+  display: none;
+  margin: 0;
+}
+.gallery div img {
+    width: 100%;
+    filter: grayscale(0%);
+    
+  }
+.gallery div img:hover {
+    filter: grayscale(1);
+    cursor: pointer;
+    transform: scale(0);
+  }
+  .gallery div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+    
+}
+

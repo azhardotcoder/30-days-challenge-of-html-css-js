@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid; */
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+body {
+    background: #003767;
+}
+body h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.container {
+    font-family: "Open Sans", sans-serif;
+    background-color: #fff;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+}
+
+.display-timer {
+    font-family: 'roboto mono', monospace;
+    margin-top: 10px;
+    position: relative;
+    width: 92%;
+    background: #fff;
+    left: 4%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+    font-size: 25px;
+}
+
+.buttons {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: #8c52ff;
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: #e35209;
+
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: #f7df1e;
+
+}
+
+.buttons button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        min-width: 200px;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(26, 63, 90);
+    }
+    .display-timer {
+        padding: 20px;
+        font-size: 6vw;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        
+    }
+    .buttons button {
+        width: 80%;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        height: 35px;
+        font-size: 25px;
+        margin-top: 10px;
+        font-family: 'roboto mono', monospace;
+        text-transform: uppercase;
+    }
+    body h1{
+        font-size: 30px;
+    }
+    
+}
