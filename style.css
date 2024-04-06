@@ -100,7 +100,13 @@ nav ul li a {
     font-size: 50px;
     text-align: center;
     margin: 100px;
-    color: rgba(255, 0, 0, 0.462);
+    
+    
+}
+.swipe a{
+    color: rgb(179, 255, 0);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #heading {
