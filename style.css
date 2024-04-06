@@ -215,6 +215,9 @@ footer {
         margin-top: 2px;
         /* margin-bottom: 2px; */
     }
+    .swipe a{
+        color: rgb(179, 255, 0);
+    }
 
     #vid{
         height: 85vh;
