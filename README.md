@@ -32,5 +32,6 @@ Welcome to my 30 Days of Web Development Projects repository! In this journey, I
 28. Snake Game
 29. Tic Tac Toe
 30. News App
+## Projects Live
+All these projects are <a href="https://projects.azhardev.me/">Live</a>
 
-## Made by <a href="https://linkedin.com/in/azhardotcoder">Azhar</a>
