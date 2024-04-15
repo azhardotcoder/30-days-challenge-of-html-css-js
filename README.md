@@ -1,4 +1,4 @@
-# 30 Days HTML, CSS, JavaScript Projects Challenge
+9# 30 Days HTML, CSS, JavaScript Projects Challenge
 
 Welcome to my 30 Days of Web Development Projects repository! In this journey, I've completed 30 different web development projects, each designed to enhance my coding skills and explore various aspects of web development. Below is a brief overview of each project:
 
@@ -32,6 +32,6 @@ Welcome to my 30 Days of Web Development Projects repository! In this journey, I
 28. Snake Game
 29. Tic Tac Toe
 30. News App
-## Projects Live
-All these projects are <a href="https://projects.azhardev.me/">Live</a>
+## All these projects are live
+<a href="https://projects.azhardev.me/">Live</a>
 
