@@ -1,4 +1,4 @@
-9# 30 Days HTML, CSS, JavaScript Projects Challenge
+## 30 Days HTML, CSS, JavaScript Projects Challenge
 
 Welcome to my 30 Days of Web Development Projects repository! In this journey, I've completed 30 different web development projects, each designed to enhance my coding skills and explore various aspects of web development. Below is a brief overview of each project:
 
